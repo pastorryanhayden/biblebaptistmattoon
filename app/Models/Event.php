@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Database\Factories\EventFactory;
 
 class Event extends Model
 {
@@ -26,4 +27,9 @@ class Event extends Model
         'start_date' => 'date',
         'end_date' => 'date',
     ];
+
+    protected static function newFactory()
+    {
+        return EventFactory::new();
+    }
 }

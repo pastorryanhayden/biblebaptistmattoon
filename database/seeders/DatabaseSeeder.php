@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Ministry;
+use App\Models\Event;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,5 +22,8 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+         Ministry::factory(10)->create();
+         Event::factory(10)->create();
     }
 }

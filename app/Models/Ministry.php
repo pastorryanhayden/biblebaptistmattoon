@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Database\Factories\MinistryFactory;
 
 class Ministry extends Model
 {
@@ -23,6 +24,11 @@ class Ministry extends Model
     protected $casts = [
         'homepage' => 'boolean'
     ];
+
+    protected static function newFactory()
+    {
+        return MinistryFactory::new();
+    }
 
     public function leader()
     {
