@@ -4,17 +4,27 @@ article.single-ministry {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: $s6;
-
     img {
         width: 100%;
         height: auto;
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: 6;
+        height: 400px;
+        object-fit: cover;
     }
-    div.content {
+    section.who-its-for {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 0 $s4 $s4 $s4;
+        background-color: $gray-100;
+    }
+    section.meeting-info {
         grid-column-start: 3;
         grid-column-end: 6;
+        padding: 0 $s4 $s4 $s4;
+        background-color: $gray-100;
     }
+
     section.body {
         grid-column-start: 1;
         grid-column-end: 6;

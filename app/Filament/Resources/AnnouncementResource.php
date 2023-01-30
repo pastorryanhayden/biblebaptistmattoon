@@ -25,6 +25,8 @@ class AnnouncementResource extends Resource
     
     protected static ?string $navigationIcon = 'heroicon-o-exclamation-circle';
 
+    protected static ?string $navigationGroup = 'Church Life';
+
     public static function form(Form $form): Form
     {
         return $form

@@ -6,9 +6,11 @@
 @section('content')
 <article class="single-ministry">
 <img src="{{ asset('/storage/' . $ministry->image ) }}" alt="{{ $ministry->name }}">
-<div class="content">
-<h2>{{ $ministry->name }}</h2>
-<p class="for">{{ $ministry->for }}</p>
+
+<section class="who-its-for">
+    <h3>Who it's for:</h3>
+    <p class="for">{{ $ministry->for }}</p>
+</section>
 <section class="meeting-info">
     <h3>Meeting Info</h3>
     <p>{{ $ministry->meeting_info }}</p>
@@ -21,7 +23,7 @@
     <p><strong>Email: </strong> {{ $ministry->leader->email }}</p>
     <p><strong>Phone: </strong> {{ $ministry->leader->phone }}</p>
 </section>
-</div>
+
 <section class="body">
     {!! $ministry->body !!}
 </section>

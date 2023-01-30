@@ -29,6 +29,8 @@ class MinistryResource extends Resource
 {
     protected static ?string $model = Ministry::class;
 
+    protected static ?string $navigationGroup = 'Church Life';
+
     protected static ?string $navigationIcon = 'heroicon-o-view-grid';
 
     public ?string $name = '';

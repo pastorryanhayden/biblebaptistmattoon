@@ -32,9 +32,10 @@ article.event {
     }
     img {
         // The image is 480x270 so that it fits the 16:9 ratio of the slides
-        width: 480px;
-        height: 270px;
-        object-fit: cover;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border: none !important;
         margin-top: $s12;
         margin-left: auto;
         margin-right: auto;

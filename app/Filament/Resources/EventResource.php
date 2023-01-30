@@ -33,6 +33,8 @@ class EventResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-calendar';
 
+    protected static ?string $navigationGroup = 'Church Life';
+
     public ?string $title = '';
     // public ?string $slug = '';
 
